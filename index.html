@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="pt">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Henry Vertez — foco, disciplina, comportamento e desenvolvimento pessoal.">
+<meta name="theme-color" content="#070707">
+<title>Henry Vertez — Foco. Disciplina. Evolução.</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap');
+:root{--bg:#070707;--panel:#101010;--text:#f5f2ea;--muted:#aaa69d;--gold:#d8ad57;--gold2:#f1d28c;--line:#25231f;--max:1180px}
+*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}
+body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--text);line-height:1.6;overflow-x:hidden}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.14;background-image:radial-gradient(rgba(255,255,255,.3) .6px,transparent .6px);background-size:5px 5px}
+a{color:inherit;text-decoration:none}.container{width:min(92%,var(--max));margin:auto}
+header{position:fixed;z-index:20;top:0;left:0;right:0;background:rgba(7,7,7,.75);backdrop-filter:blur(18px);border-bottom:1px solid rgba(255,255,255,.07)}
+nav{height:74px;display:flex;align-items:center;justify-content:space-between}.logo{font:800 18px Manrope;letter-spacing:1px}.logo span{color:var(--gold)}
+.navlinks{display:flex;gap:28px;color:#bdb9b0;font-size:14px}.navlinks a:hover{color:#fff}
+.hero{min-height:840px;display:grid;align-items:center;text-align:center;padding-top:74px;position:relative;background:radial-gradient(circle at 50% 30%,rgba(216,173,87,.14),transparent 34%)}
+.hero:after{content:"";position:absolute;width:520px;height:520px;border-radius:50%;background:rgba(216,173,87,.08);filter:blur(100px);left:50%;top:18%;transform:translateX(-50%)}
+.hero>*{position:relative;z-index:1}.badge{display:inline-flex;border:1px solid #4b3b20;color:var(--gold2);background:rgba(216,173,87,.08);padding:8px 14px;border-radius:999px;font-size:11px;font-weight:700;letter-spacing:1.8px;text-transform:uppercase;margin-bottom:25px}
+h1,h2,h3{font-family:Manrope}h1{font-size:clamp(52px,9vw,105px);line-height:.91;letter-spacing:-5px;max-width:980px;margin:auto}h1 em{font-style:normal;color:var(--gold)}
+.hero-copy{max-width:700px;color:var(--muted);font-size:18px;margin:28px auto 34px}.actions{display:flex;justify-content:center;gap:12px;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;justify-content:center;padding:14px 22px;border-radius:10px;background:var(--gold);color:#111;font-weight:800;border:1px solid var(--gold);transition:.25s;box-shadow:0 10px 35px rgba(216,173,87,.12)}
+.btn:hover{transform:translateY(-3px);background:var(--gold2)}.btn.secondary{background:transparent;color:#fff;border-color:#393631;box-shadow:none}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);max-width:780px;margin:80px auto 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.stat{padding:23px;border-right:1px solid var(--line)}.stat:last-child{border:0}.stat strong{display:block;font:800 24px Manrope;color:var(--gold)}.stat span{font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:1px}
+section{padding:105px 0}.eyebrow{font-size:11px;color:var(--gold);font-weight:800;text-transform:uppercase;letter-spacing:2.2px;margin-bottom:10px}
+.section-title{font-size:clamp(34px,5vw,57px);line-height:1;letter-spacing:-2.5px}.section-sub{color:var(--muted);max-width:660px;margin-top:15px}
+.about{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center}.about p{color:var(--muted);margin:20px 0}
+.quote{border-left:2px solid var(--gold);padding:14px 0 14px 20px;font:600 19px Manrope;color:#e8e3d8}.pillars{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+.pillar{padding:24px;border:1px solid var(--line);border-radius:16px;background:linear-gradient(145deg,#151515,#0d0d0d);transition:.25s}.pillar:hover{transform:translateY(-4px);border-color:#4b3b20}
+.pillar b{font:700 15px Manrope}.pillar p{font-size:13px;color:var(--muted);margin-top:8px}
+.books-head{margin-bottom:38px}.books{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.book{background:var(--panel);border:1px solid var(--line);border-radius:18px;overflow:hidden;transition:.3s}.book:hover{transform:translateY(-7px);border-color:#4b3b20;box-shadow:0 20px 60px rgba(0,0,0,.35)}
+.cover{height:390px;padding:26px;display:flex;align-items:center;justify-content:center;background:linear-gradient(145deg,#191817,#0d0d0d)}.cover img{height:100%;max-width:100%;object-fit:contain;filter:drop-shadow(0 20px 25px rgba(0,0,0,.5));transition:.3s}.book:hover .cover img{transform:scale(1.025)}
+.book-body{padding:22px}.book-number{font-size:10px;color:var(--gold);font-weight:800;letter-spacing:2px;text-transform:uppercase}.book h3{font-size:21px;margin:7px 0}.book p{font-size:13px;color:var(--muted);min-height:62px;margin-bottom:18px}.book .btn{width:100%;font-size:13px;padding:12px}
+.wa-section{background:linear-gradient(180deg,#0a0a09,#0e0d0b);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.wa-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:38px}.wa-card{padding:27px;border:1px solid var(--line);border-radius:17px;background:#11110f}
+.wa-card small{color:var(--gold);font-weight:800;letter-spacing:2px}.wa-card h3{font-size:21px;margin:10px 0 6px}.wa-card p{font-size:13px;color:var(--muted);margin-bottom:20px}
+.wa-btn{width:100%;background:#20c967;border-color:#20c967;color:#07150c;box-shadow:none}
+.final{text-align:center;padding:120px 0;background:radial-gradient(circle at 50% 60%,rgba(216,173,87,.1),transparent 38%)}.final h2{font-size:clamp(38px,6vw,68px);line-height:.98;letter-spacing:-3px}.final p{color:var(--muted);max-width:580px;margin:17px auto 28px}
+footer{border-top:1px solid var(--line);padding:25px 0;color:#77736b;font-size:12px;display:flex;justify-content:space-between;gap:20px}
+@media(max-width:850px){.navlinks{display:none}.hero{min-height:760px}h1{letter-spacing:-3px}.about{grid-template-columns:1fr;gap:40px}.books,.wa-grid{grid-template-columns:1fr}.stats{margin-top:60px}.cover{height:360px}section{padding:75px 0}}
+@media(max-width:520px){.hero-copy{font-size:16px}.stats{grid-template-columns:1fr}.stat{border-right:0;border-bottom:1px solid var(--line)}.stat:last-child{border-bottom:0}.pillars{grid-template-columns:1fr}footer{flex-direction:column}}
+</style>
+</head>
+<body>
+<header><div class="container"><nav>
+<a class="logo" href="#">HENRY <span>VERTEZ</span></a>
+<div class="navlinks"><a href="#sobre">Sobre</a><a href="#ebooks">eBooks</a><a href="#whatsapp">Solicitar</a></div>
+</nav></div></header>
+<main>
+<section class="hero"><div class="container">
+<div class="badge">Desenvolvimento pessoal · Comportamento</div>
+<h1>RECUPERE O CONTROLE DA SUA <em>ATENÇÃO.</em></h1>
+<p class="hero-copy">Conteúdos diretos para quem quer parar de viver no automático, construir disciplina e colocar energia no que realmente importa.</p>
+<div class="actions"><a class="btn" href="#ebooks">Explorar eBooks ↓</a><a class="btn secondary" href="#sobre">Conhecer o trabalho</a></div>
+<div class="stats"><div class="stat"><strong>FOCO</strong><span>Direção</span></div><div class="stat"><strong>DISCIPLINA</strong><span>Consistência</span></div><div class="stat"><strong>EVOLUÇÃO</strong><span>Prática</span></div></div>
+</div></section>
+
+<section id="sobre"><div class="container about"><div>
+<div class="eyebrow">A filosofia</div><h2 class="section-title">Menos ruído.<br>Mais direção.</h2>
+<p>Sou Henry Vertez, profissional de saúde e especialista em desenvolvimento pessoal e comportamento. Meu trabalho é transformar ideias sobre foco, disciplina e comportamento em conteúdos simples, práticos e aplicáveis.</p>
+<div class="quote">“Sua atenção é um dos seus ativos mais valiosos. Aprenda a protegê-la.”</div>
+</div><div class="pillars">
+<div class="pillar"><b>01 — Foco</b><p>Direcione sua atenção para aquilo que realmente merece sua energia.</p></div>
+<div class="pillar"><b>02 — Disciplina</b><p>Construa consistência mesmo nos dias em que a motivação desaparece.</p></div>
+<div class="pillar"><b>03 — Comportamento</b><p>Entenda os padrões que influenciam suas decisões e resultados.</p></div>
+<div class="pillar"><b>04 — Produtividade</b><p>Faça menos do que é inútil e mais do que produz resultado.</p></div>
+</div></div></section>
+
+<section id="ebooks"><div class="container"><div class="books-head">
+<div class="eyebrow">Biblioteca</div><h2 class="section-title">Conhecimento que vira ação.</h2>
+<p class="section-sub">Escolha um eBook e comece a trabalhar em uma versão mais focada, disciplinada e intencional de você.</p>
+</div>
+<div class="books">
+<article class="book"><div class="cover"><img src="images/Controle_mental_na_era_digital.jpg" alt="Capa do eBook Controle Mental na Era Digital"></div><div class="book-body"><div class="book-number">eBook 01</div><h3>Controle Mental na Era Digital</h3><p>Reduza distrações, proteja sua atenção e volte a concentrar energia no que importa.</p><a class="btn" href="#whatsapp">Quero este eBook</a></div></article>
+<article class="book"><div class="cover"><img src="images/O_que_nao_e_do_seu_controle_nao_importa.jpg" alt="Capa do eBook Foda-se a Opinião Alheia"></div><div class="book-body"><div class="book-number">eBook 02</div><h3>Foda-se a Opinião Alheia</h3><p>Construa consistência sem viver refém de críticas, julgamentos e aprovação externa.</p><a class="btn" href="#whatsapp">Quero este eBook</a></div></article>
+<article class="book"><div class="cover"><img src="images/O_segredo_da_mente.jpg" alt="Capa do eBook Mente Imparável"></div><div class="book-body"><div class="book-number">eBook 03</div><h3>Mente Imparável</h3><p>Compreenda seus padrões e desenvolva uma mentalidade mais consciente e intencional.</p><a class="btn" href="#whatsapp">Quero este eBook</a></div></article>
+</div></div></section>
+
+<section id="whatsapp" class="wa-section"><div class="container">
+<div class="eyebrow">Atendimento direto</div><h2 class="section-title">Escolha seu próximo passo.</h2>
+<p class="section-sub">Clique no eBook desejado. O WhatsApp abrirá com uma mensagem pronta para facilitar seu pedido.</p>
+<div class="wa-grid">
+<div class="wa-card"><small>EBOOK 01</small><h3>Controle Mental na Era Digital</h3><p>Para quem quer recuperar concentração e reduzir distrações.</p><a class="btn wa-btn" href="https://wa.me/258XXXXXXXXX?text=Olá%20Henry!%20Quero%20o%20eBook%20Controle%20Mental%20na%20Era%20Digital.">Solicitar no WhatsApp</a></div>
+<div class="wa-card"><small>EBOOK 02</small><h3>Foda-se a Opinião Alheia</h3><p>Para quem quer agir sem viver preso à aprovação dos outros.</p><a class="btn wa-btn" href="https://wa.me/258XXXXXXXXX?text=Olá%20Henry!%20Quero%20o%20eBook%20Foda-se%20a%20Opinião%20Alheia.">Solicitar no WhatsApp</a></div>
+<div class="wa-card"><small>EBOOK 03</small><h3>Mente Imparável</h3><p>Para quem quer compreender melhor seus padrões e agir com intenção.</p><a class="btn wa-btn" href="https://wa.me/258XXXXXXXXX?text=Olá%20Henry!%20Quero%20o%20eBook%20Mente%20Imparável.">Solicitar no WhatsApp</a></div>
+</div></div></section>
+
+<section class="final"><div class="container"><div class="eyebrow">Henry Vertez</div>
+<h2>Não entregue sua atenção<br>ao mundo.</h2><p>Construa foco. Desenvolva disciplina. Torne-se mais intencional.</p>
+<a class="btn" href="#ebooks">Ver eBooks</a></div></section>
+</main>
+<footer><div class="container" style="display:flex;justify-content:space-between;gap:20px"><span>© 2026 Henry Vertez. Todos os direitos reservados.</span><span>Foco · Disciplina · Evolução</span></div></footer>
+</body></html>
